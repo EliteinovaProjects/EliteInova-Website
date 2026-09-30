@@ -1,4 +1,17 @@
-﻿:root {
+﻿/* FORCE 75% WINDOWS SIZE - This makes 100% browser zoom look like 75% */
+html {
+  zoom: 75%;
+}
+
+@supports not (zoom: 75%) {
+  html {
+    transform: scale(0.75);
+    transform-origin: 0 0;
+    width: 133.333%;
+  }
+}
+
+:root {
   --bg: #edf7ff;
   --panel: rgba(255,255,255,0.38);
   --panel-strong: rgba(255,255,255,0.62);
@@ -14,7 +27,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; overflow-x: clip; }
 body {
-  margin: 10px;
+  margin: 0;
   font-family: "Manrope", sans-serif;
   overflow-x: clip;
   background:
@@ -116,6 +129,7 @@ button { font: inherit; }
   flex-wrap: wrap;
 }
 .main-nav a {
+  position: relative;
   color: rgba(20,39,69,0.82);
   font-weight: 600;
   font-size: 0.76rem;
@@ -309,7 +323,6 @@ button { font: inherit; }
   z-index: 2;
   pointer-events: none;
   display: block;
-  opacity: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -317,7 +330,6 @@ button { font: inherit; }
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  opacity: 1;
   mix-blend-mode: normal;
   box-shadow: 0 0 0 4px rgba(255,255,255,0.76), 0 12px 26px rgba(13,48,95,0.22);
 }
@@ -521,14 +533,15 @@ section[id] {
   inset: 0;
   background: linear-gradient(180deg, rgba(255,255,255,0.03) 52%, rgba(255,255,255,0.3));
 }
+/* FIXED IMAGE NAMES - NO SPACES */
 .visual-one {
-  background-image: url("assets/couple image.jpg");
+  background-image: url("./assets/couple-image.jpg");
 }
 .visual-two {
-  background-image: url("assets/Real Estate Image.jpg");
+  background-image: url("./assets/Real-Estate-Image.jpg");
 }
 .visual-three {
-  background-image: url("assets/Leather Image.png");
+  background-image: url("./assets/Leather-Image.png");
 }
 .pink-card { background: linear-gradient(155deg, rgba(255,229,242,0.82), rgba(255,255,255,0.48) 48%, rgba(244,217,240,0.7)); }
 .blue-card { background: linear-gradient(155deg, rgba(219,247,248,0.82), rgba(255,255,255,0.48) 48%, rgba(204,231,244,0.76)); }
@@ -880,13 +893,13 @@ section[id] {
   box-shadow: 0 12px 24px rgba(129,174,221,0.12);
 }
 .relationship-photo {
-  background-image: url("assets/couple image.jpg");
+  background-image: url("./assets/couple-image.jpg");
 }
 .property-photo {
-  background-image: url("assets/Real Estate Image.jpg");
+  background-image: url("./assets/Real-Estate-Image.jpg");
 }
 .lifestyle-photo {
-  background-image: url("assets/Leather Image.png");
+  background-image: url("./assets/Leather-Image.png");
 }
 .industry-label {
   font-size: 1.2rem;
@@ -920,10 +933,10 @@ section[id] {
   border: 1px solid rgba(118,160,218,0.2);
   margin-bottom: 12px;
 }
-.visual-a { background-image: url("assets/couple image.jpg"); }
-.visual-b { background-image: url("assets/Real Estate Image.jpg"); }
-.visual-c { background-image: url("assets/Leather Image.png"); }
-.visual-d { background-image: url("assets/mobile apps.jpg"); }
+.visual-a { background-image: url("./assets/couple-image.jpg"); }
+.visual-b { background-image: url("./assets/Real-Estate-Image.jpg"); }
+.visual-c { background-image: url("./assets/Leather-Image.png"); }
+.visual-d { background-image: url("./assets/mobile-apps.jpg"); }
 .work-copy h3 {
   margin: 0 0 4px;
   color: #1a3f6f;
@@ -1046,7 +1059,7 @@ section[id] {
 .journey-mountain {
   position: absolute;
   inset: 0;
-  background: url("assets/journey-mountain.jpg") center 48% / cover no-repeat;
+  background: url("./assets/journey-mountain.jpg") center 48% / cover no-repeat;
   filter: saturate(0.74) brightness(1.12);
 }
 .journey-visual::after {
@@ -1114,7 +1127,7 @@ section[id] {
   width: 420px;
   height: 420px;
   border-radius: 50%;
-  background: url("assets/3.jpeg") center/cover no-repeat;
+  background: url("./assets/3.jpeg") center/cover no-repeat;
   border: 1px solid rgba(128,171,229,0.15);
   box-shadow: 0 28px 50px rgba(117,155,211,0.12);
 }
@@ -1310,33 +1323,6 @@ section[id] {
 .eco-property { right: 7%; top: 50%; transform: translateY(-50%); }
 .eco-leather { left: 50%; bottom: 1%; transform: translateX(-50%); }
 
-@media (max-width: 760px) {
-  .ecosystem-stage {
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 16px 8px;
-    padding: 22px 12px;
-  }
-  .ecosystem-stage::before,
-  .ecosystem-stage::after {
-    content: none;
-  }
-  .eco-node,
-  .eco-center {
-    position: relative;
-    inset: auto;
-    transform: none;
-    justify-self: center;
-    width: min(100%, 144px);
-    aspect-ratio: 1;
-    height: auto;
-  }
-  .eco-center {
-    grid-column: 1 / -1;
-  }
-}
-
 .cta-band {
   margin-top: 34px;
   padding: 20px 26px;
@@ -1347,6 +1333,7 @@ section[id] {
   background: linear-gradient(120deg, #081c4d 0%, #173785 22%, #0d57b3 68%, #0c1f58 100%);
   overflow: hidden;
   border: 1px solid rgba(84, 121, 201, 0.3);
+  border-radius: 28px;
 }
 .cta-band .cta-copy {
   padding: 16px 0 16px 18px;
@@ -1475,8 +1462,8 @@ section[id] {
   color: rgba(28,51,88,0.8);
 }
 
+/* FIXED FOR 75% - hero stays side-by-side at 100% browser zoom */
 @media (max-width: 1280px) {
-  .hero-panel,
   .about-story,
   .cta-band,
   .site-footer {
@@ -1498,6 +1485,12 @@ section[id] {
   }
   .main-nav {
     gap: 14px 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-panel {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1629,36 +1622,16 @@ section[id] {
   overflow: hidden;
 }
 
-.about-page .page-banner-visual { background-image: url("assets/2.jpeg"); }
-.brands-page .page-banner-visual { background-image: url("assets/1.jpeg"); }
-.contact-page .page-banner-visual { background-image: url("assets/BD.jpg"); }
-.industries-page .page-banner-visual { background-image: url("assets/eco.jpg"); }
-.journey-page .page-banner-visual { background-image: url("assets/3.jpeg"); }
-.leather-page .page-banner-visual { background-image: url("assets/Leather Image.png"); }
-.matrimony-page .page-banner-visual { background-image: url("assets/couple image.jpg"); }
-.portfolio-page .page-banner-visual { background-image: url("assets/PORTFOLIO.jpg"); }
-.properties-page .page-banner-visual { background-image: url("assets/Real Estate Image.jpg"); }
-.services-page .page-banner-visual { background-image: url("assets/mobile apps.jpg"); }
-
-.page-banner-visual::before,
-.page-banner-visual::after {
-  content: none;
-}
-
-.page-banner-visual::before {
-  width: 180px;
-  height: 180px;
-  right: 20px;
-  bottom: 18px;
-}
-
-.page-banner-visual::after {
-  width: 120px;
-  height: 120px;
-  left: 38px;
-  top: 18px;
-  background: rgba(123,196,255,0.34);
-}
+.about-page .page-banner-visual { background-image: url("./assets/2.jpeg"); }
+.brands-page .page-banner-visual { background-image: url("./assets/1.jpeg"); }
+.contact-page .page-banner-visual { background-image: url("./assets/BD.jpg"); }
+.industries-page .page-banner-visual { background-image: url("./assets/eco.jpg"); }
+.journey-page .page-banner-visual { background-image: url("./assets/3.jpeg"); }
+.leather-page .page-banner-visual { background-image: url("./assets/Leather-Image.png"); }
+.matrimony-page .page-banner-visual { background-image: url("./assets/couple-image.jpg"); }
+.portfolio-page .page-banner-visual { background-image: url("./assets/PORTFOLIO.jpg"); }
+.properties-page .page-banner-visual { background-image: url("./assets/Real-Estate-Image.jpg"); }
+.services-page .page-banner-visual { background-image: url("./assets/mobile-apps.jpg"); }
 
 .brands-page .page-banner,
 .industries-page .page-banner {
@@ -2093,4 +2066,34 @@ section[id] {
   .main-nav a:active,
   .primary-btn:active,
   .secondary-btn:active { transform: scale(0.98); }
+}
+
+@media (max-width: 760px) {
+  html {
+    zoom: 100%;
+  }
+  .ecosystem-stage {
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 8px;
+    padding: 22px 12px;
+  }
+  .ecosystem-stage::before,
+  .ecosystem-stage::after {
+    content: none;
+  }
+  .eco-node,
+  .eco-center {
+    position: relative;
+    inset: auto;
+    transform: none;
+    justify-self: center;
+    width: min(100%, 144px);
+    aspect-ratio: 1;
+    height: auto;
+  }
+  .eco-center {
+    grid-column: 1 / -1;
+  }
 }

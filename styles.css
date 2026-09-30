@@ -1,8 +1,4 @@
-﻿html {
-  zoom: 75%;
-}
-
-:root {
+﻿:root {
   --bg: #edf7ff;
   --panel: rgba(255,255,255,0.38);
   --panel-strong: rgba(255,255,255,0.62);

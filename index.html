@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eliteinova</title>
+    <script>
+      try {
+        if (localStorage.getItem("eliteinova-theme") === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      } catch {}
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">
+            <img src="assets/88627263.png" alt="" />
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Eliteinova</span>
+            <small>Tech Pvt Ltd</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about-us">About</a>
+          <a href="#our-brands">Our Brands</a>
+          <a href="#services">Services</a>
+          <a href="#technologies">Technologies</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="https://eliteinovatechpvtltd.com/html/blog.html" target="_blank" rel="noopener">Blog</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch to dark theme" aria-pressed="false">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20.2 15.1A8.5 8.5 0 0 1 8.9 3.8 8.7 8.7 0 1 0 20.2 15.1Z" /></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+        </button>
+
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+        <a class="primary-btn" href="#contact">Book a Free Consultation</a>
+      </header>
+
+      <main class="main-content">
+        <section class="hero panel hero-panel" id="home">
+          <div class="hero-copy">
+            <div class="eyebrow">ELITEINOVA TECH PVT LTD</div>
+            <h1>
+              One Technology.<br />
+              Three Worlds.<br />
+              <span class="hero-highlight">Infinite Possibilities.</span>
+            </h1>
+            <p>
+              Technology, Relationships, Property and Lifestyle — all under one trusted
+              name.
+            </p>
+
+            <div class="cta-row">
+              <a class="primary-btn" href="#our-brands">Explore Our Brands</a>
+              <a class="secondary-btn" href="#contact">Start a Project</a>
+            </div>
+
+          </div>
+
+          <div class="hero-visual" aria-label="Brand showcase">
+            <canvas class="hero-canvas" id="hero-3d" aria-hidden="true"></canvas>
+            <div class="halo halo-1"></div>
+            <div class="halo halo-2"></div>
+
+            <div class="floating-card card-1">
+              <div class="brand-badge">Eliteinova</div>
+              <div class="product-thumb product-thumb-1"><img src="assets/couple image.jpg" alt="" /></div>
+              <div class="card-title">Matrimony</div>
+              <div class="product-subtitle">Find Your Perfect Match</div>
+            </div>
+
+            <div class="floating-card card-2">
+              <div class="brand-badge">Eliteinova</div>
+              <div class="product-thumb product-thumb-2"><img src="assets/Real Estate Image.jpg" alt="" /></div>
+              <div class="card-title">Properties</div>
+              <div class="product-subtitle">Build Your Future</div>
+            </div>
+
+            <div class="floating-card card-3">
+              <div class="brand-badge">Eliteinova</div>
+              <div class="product-thumb product-thumb-3"><img src="assets/Leather Image.png" alt="" /></div>
+              <div class="card-title">Leather Products</div>
+              <div class="product-subtitle">Crafted for Elegance</div>
+            </div>
+
+            <div class="hero-scene-label scene-matrimony">
+              <strong>Matrimony</strong>
+              <span>Find Your Perfect Match</span>
+            </div>
+            <div class="hero-scene-label scene-properties">
+              <strong>Properties</strong>
+              <span>Build Your Future</span>
+            </div>
+            <div class="hero-scene-label scene-leather">
+              <strong>Leather Products</strong>
+              <span>Crafted for Elegance</span>
+            </div>
+            <div class="hero-core-label">
+              <img src="assets/88627263.png" alt="Eliteinova Tech Pvt Ltd, Software Developer" />
+            </div>
+          </div>
+
+          <div class="contact-strip">
+            <a class="mini-contact" href="tel:+917397260093">
+              <span class="icon-circle">☎</span>
+              <span><label>+91 73972 60093</label><small>Appointments</small></span>
+            </a>
+            <a class="mini-contact" href="mailto:info@eliteinovatechpvtltd.com">
+              <span class="icon-circle">✉</span>
+              <span><label>info@eliteinovatechpvtltd.com</label><small>Email Us</small></span>
+            </a>
+            <a class="mini-contact" href="#contact-details">
+              <span class="icon-circle">⌂</span>
+              <span><label>Chennai, Tamil Nadu</label><small>Our Location</small></span>
+            </a>
+            <a class="mini-contact scroll-contact" href="#our-brands">
+              <span class="icon-circle scroll-icon">↓</span>
+              <span><label>Scroll to Explore</label><small>Discover Eliteinova</small></span>
+            </a>
+          </div>
+        </section>
+
+        <section class="brands-section" id="our-brands">
+          <div class="section-title-wrap">
+            <h2>Our Brands</h2>
+            <p>Three Unique Platforms. One Eliteinova.</p>
+          </div>
+
+          <div class="brand-grid">
+            <article class="mini-brand-card pink-card">
+              <div class="mini-brand-visual visual-one" role="img" aria-label="Couple celebrating their relationship"></div>
+              <span class="brand-icon" aria-hidden="true">♥</span>
+              <div class="brand-card-copy">
+                <h3>Eliteinova<br />Matrimony</h3>
+                <p>Connecting Hearts.<br />Building Relationships.</p>
+                <a class="brand-explore" href="#matrimony">Explore Matrimony <span>+</span></a>
+              </div>
+            </article>
+
+            <article class="mini-brand-card blue-card">
+              <div class="mini-brand-visual visual-two" role="img" aria-label="Modern home surrounded by greenery"></div>
+              <span class="brand-icon" aria-hidden="true">⌂</span>
+              <div class="brand-card-copy">
+                <h3>Eliteinova<br />Properties</h3>
+                <p>Discover Spaces.<br />Build Your Future.</p>
+                <a class="brand-explore" href="#properties">Explore Properties <span>+</span></a>
+              </div>
+            </article>
+
+            <article class="mini-brand-card tan-card">
+              <div class="mini-brand-visual visual-three" role="img" aria-label="Leather bags and accessories"></div>
+              <span class="brand-icon" aria-hidden="true">✿</span>
+              <div class="brand-card-copy">
+                <h3>Eliteinova<br />Leather Products</h3>
+                <p>Crafted for Timeless<br />Elegance.</p>
+                <a class="brand-explore" href="#leather">Explore Products <span>+</span></a>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="brand-details-section" aria-label="Brand details">
+          <section class="brand-detail" id="matrimony">
+            <div class="section-title-wrap left-title">
+              <h2>Eliteinova Matrimony</h2>
+              <p>Thoughtful matchmaking for meaningful connections.</p>
+            </div>
+            <div class="content-grid">
+              <article class="info-card"><h3>Connected Profiles</h3><p>Personalized experiences help people connect in a safe, premium, community-focused environment.</p></article>
+              <article class="info-card"><h3>Trusted Platform</h3><p>Clear, authentic interactions help people find compatibility with confidence.</p></article>
+              <article class="info-card"><h3>Premium Journey</h3><p>Modern usability meets the importance of relationships and family traditions.</p></article>
+            </div>
+            <div class="page-list">
+              <div class="mini-feature"><h4>Profile Discovery</h4><p>Intuitive journeys make finding compatibility more engaging.</p></div>
+              <div class="mini-feature"><h4>Community Trust</h4><p>Safety, privacy, and transparency guide every interaction.</p></div>
+              <div class="mini-feature"><h4>Matching Journey</h4><p>Curated connections make decisions easier for every user.</p></div>
+              <div class="mini-feature"><h4>Brand Experience</h4><p>Thoughtful design reflects care and quality.</p></div>
+            </div>
+          </section>
+
+          <section class="brand-detail" id="properties">
+            <div class="section-title-wrap left-title">
+              <h2>Eliteinova Properties</h2>
+              <p>Discover spaces and opportunities with confidence.</p>
+            </div>
+            <div class="content-grid">
+              <article class="info-card"><h3>Property Discovery</h3><p>Engaging, transparent browsing supports buyers and investors.</p></article>
+              <article class="info-card"><h3>Market Value</h3><p>Premium imagery and clear information help people make decisions.</p></article>
+              <article class="info-card"><h3>Brand Trust</h3><p>A reassuring digital experience supports every property journey.</p></article>
+            </div>
+            <div class="page-list">
+              <div class="mini-feature"><h4>Buyers</h4><p>Discover the right fit with less friction.</p></div>
+              <div class="mini-feature"><h4>Sellers</h4><p>Professional listings improve visibility and credibility.</p></div>
+              <div class="mini-feature"><h4>Investors</h4><p>Clear presentation makes opportunities easier to evaluate.</p></div>
+              <div class="mini-feature"><h4>Premium Feel</h4><p>Elegant design builds confidence through the journey.</p></div>
+            </div>
+          </section>
+
+          <section class="brand-detail" id="leather">
+            <div class="section-title-wrap left-title">
+              <h2>Eliteinova Leather</h2>
+              <p>Craftsmanship, elegance, and modern lifestyle.</p>
+            </div>
+            <div class="content-grid">
+              <article class="info-card"><h3>Craftsmanship</h3><p>Attention to detail makes each product feel timeless and memorable.</p></article>
+              <article class="info-card"><h3>Luxury Appeal</h3><p>Quality and thoughtful design shape a premium shopping experience.</p></article>
+              <article class="info-card"><h3>Lifestyle Story</h3><p>Heritage, function, and sophistication meet modern digital retail.</p></article>
+            </div>
+            <div class="page-list">
+              <div class="mini-feature"><h4>Premium Quality</h4><p>Beautiful design starts with lasting value.</p></div>
+              <div class="mini-feature"><h4>Elegant Branding</h4><p>Product stories highlight taste and confidence.</p></div>
+              <div class="mini-feature"><h4>Luxury Retail</h4><p>Every touchpoint feels polished and memorable.</p></div>
+              <div class="mini-feature"><h4>Modern Identity</h4><p>Classic craft meets a contemporary experience.</p></div>
+            </div>
+          </section>
+        </section>
+
+        <section class="tech-core" id="technologies" aria-labelledby="tech-core-title">
+          <div class="section-title-wrap left-title">
+            <h2 id="tech-core-title">Technology Core</h2>
+            <p>Powering Innovation. Driving Growth.</p>
+          </div>
+
+          <div class="core-visual">
+            <div class="tech-orbit">
+              <div class="tech-bubble tech-react"><img src="assets/react_cutout.png" alt="" /><span>React</span></div>
+              <div class="tech-bubble tech-python"><img src="assets/python_cutout.png" alt="" /><span>Python</span></div>
+              <div class="tech-bubble tech-mysql"><img src="assets/mysql_cutout.png" alt="" /><span>MySQL</span></div>
+              <div class="tech-bubble tech-php"><img src="assets/php_cutout.png" alt="" /><span>PHP</span></div>
+              <div class="tech-bubble tech-angular"><img src="assets/angular_cutout.png" alt="" /><span>Angular</span></div>
+              <div class="tech-bubble tech-firebase"><img src="assets/firebase_cutout.png" alt="" /><span>Firebase</span></div>
+              <div class="tech-bubble tech-azure"><img src="assets/azure_cutout.png" alt="" /><span>Azure</span></div>
+              <div class="tech-bubble tech-shopify"><img src="assets/shopify_cutout.png" alt="" /><span>Shopify</span></div>
+            </div>
+
+            <div class="core-cube" aria-label="Eliteinova technology core cube">
+              <div class="logo-glow"></div>
+              <div class="core-logo">Eliteinova</div>
+            </div>
+
+            <div class="tech-list">
+              <div class="tech-list-item"><img src="assets/react_cutout.png" alt="" /> React</div>
+              <div class="tech-list-item"><span class="stack-node-mark" aria-hidden="true">N</span> Node.js</div>
+              <div class="tech-list-item"><img src="assets/python_cutout.png" alt="" /> Python</div>
+              <div class="tech-list-item"><img src="assets/php_cutout.png" alt="" /> PHP</div>
+              <div class="tech-list-item"><img src="assets/mysql_cutout.png" alt="" /> MySQL</div>
+              <div class="tech-list-item"><img src="assets/angular_cutout.png" alt="" /> Angular</div>
+              <div class="tech-list-item"><img src="assets/firebase_cutout.png" alt="" /> Firebase</div>
+              <div class="tech-list-item"><img src="assets/azure_cutout.png" alt="" /> Azure</div>
+              <div class="tech-list-item"><img src="assets/shopify_cutout.png" alt="" /> Shopify</div>
+              <a class="explore-link" href="#contact">Explore All <span>→</span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="services-section" id="services">
+          <div class="section-title-wrap left-title">
+            <h2>Digital Services</h2>
+            <p>Solutions for Every Business Need</p>
+          </div>
+
+          <div class="digital-services-stage">
+            <div class="service-card service-card-1">
+              <div class="service-icon">◫</div>
+              <div class="service-name">Website<br />Development</div>
+            </div>
+            <div class="service-card service-card-2">
+              <div class="service-icon">▣</div>
+              <div class="service-name">Mobile App<br />Development</div>
+            </div>
+            <div class="service-card service-card-3">
+              <div class="service-icon">◭</div>
+              <div class="service-name">E-Commerce<br />Solutions</div>
+            </div>
+            <div class="service-card service-card-4">
+              <div class="service-icon">◌</div>
+              <div class="service-name">Web Application<br />Development</div>
+            </div>
+            <div class="service-card service-card-5">
+              <div class="service-icon">⚙</div>
+              <div class="service-name">SEO<br />Services</div>
+            </div>
+            <div class="service-card service-card-6">
+              <div class="service-icon">◈</div>
+              <div class="service-name">Maintenance &amp;<br />Support</div>
+            </div>
+            <div class="service-card service-card-7">
+              <div class="service-icon">◑</div>
+              <div class="service-name">UI/UX<br />Design</div>
+            </div>
+            <div class="service-card service-card-8">
+              <div class="service-icon">✦</div>
+              <div class="service-name">Technology<br />Consulting</div>
+            </div>
+
+            <div class="digital-device big-device">
+              <div class="device-screen"></div>
+            </div>
+            <div class="digital-device small-device left-device">
+              <div class="device-screen"></div>
+            </div>
+            <div class="digital-device small-device right-device">
+              <div class="device-screen"></div>
+            </div>
+          </div>
+          <div class="page-list service-details">
+            <div class="mini-feature"><h4>UI/UX Design</h4><p>Intuitive, polished experiences designed around real users.</p></div>
+            <div class="mini-feature"><h4>SEO &amp; Growth</h4><p>Better visibility connects your brand with the right audience.</p></div>
+            <div class="mini-feature"><h4>Custom Applications</h4><p>Purpose-built tools fit your business model and workflow.</p></div>
+            <div class="mini-feature"><h4>Ongoing Support</h4><p>Maintenance keeps digital products reliable as you grow.</p></div>
+          </div>
+        </section>
+
+        <section class="industries-section" id="industries">
+          <div class="section-title-wrap center-title">
+            <h2>Technology Meets Three Industries</h2>
+            <p>One Platform. Endless Opportunities.</p>
+          </div>
+
+          <div class="industry-grid">
+            <div class="industry-item">
+              <div class="industry-orbit pink-orbit"><div class="industry-photo relationship-photo"></div></div>
+              <div class="industry-label">Relationship</div>
+              <div class="industry-sub">Eliteinova Matrimony</div>
+            </div>
+
+            <div class="industry-item">
+              <div class="industry-orbit blue-orbit"><div class="industry-photo property-photo"></div></div>
+              <div class="industry-label">Property</div>
+              <div class="industry-sub">Eliteinova Properties</div>
+            </div>
+
+            <div class="industry-item">
+              <div class="industry-orbit tan-orbit"><div class="industry-photo lifestyle-photo"></div></div>
+              <div class="industry-label">Lifestyle</div>
+              <div class="industry-sub">Eliteinova Leather Products</div>
+            </div>
+          </div>
+          <div class="page-list industry-details">
+            <div class="mini-feature"><h4>Market Research</h4><p>Digital decisions reflect real customer behavior and opportunity.</p></div>
+            <div class="mini-feature"><h4>Personalized Journeys</h4><p>Each experience is tailored to the audience it serves.</p></div>
+            <div class="mini-feature"><h4>Growth Strategy</h4><p>Design, product, and marketing work together for sustainable growth.</p></div>
+            <div class="mini-feature"><h4>Scalable Systems</h4><p>Our platforms are built to expand without losing quality.</p></div>
+          </div>
+        </section>
+
+        <section class="portfolio-section" id="portfolio">
+          <div class="section-title-wrap left-title">
+            <h2>Selected Work</h2>
+            <p>Our Creative Digital Experiences</p>
+          </div>
+
+          <div class="work-grid">
+            <article class="work-card work-card-1">
+              <div class="work-visual visual-a" role="img" aria-label="Couple celebrating their relationship"></div>
+              <div class="work-copy">
+                <h3>Matrimony Platform</h3>
+                <p>Web Application</p>
+              </div>
+            </article>
+
+            <article class="work-card work-card-2">
+              <div class="work-visual visual-b" role="img" aria-label="Real estate property illustration"></div>
+              <div class="work-copy">
+                <h3>Real Estate Website</h3>
+                <p>Web Application</p>
+              </div>
+            </article>
+
+            <article class="work-card work-card-3">
+              <div class="work-visual visual-c" role="img" aria-label="Leather bags and accessories"></div>
+              <div class="work-copy">
+                <h3>Leather E-Commerce</h3>
+                <p>E-Commerce</p>
+              </div>
+            </article>
+
+            <article class="work-card work-card-4">
+              <div class="work-visual visual-d" role="img" aria-label="Mobile app on a smartphone"></div>
+              <div class="work-copy">
+                <h3>Business Mobile App</h3>
+                <p>Mobile Application</p>
+              </div>
+            </article>
+          </div>
+
+          <a class="view-all" href="#contact">View All Projects <span>→</span></a>
+        </section>
+
+        <section class="journey-section" id="journey">
+          <div class="section-title-wrap left-title">
+            <h2>Our Journey</h2>
+            <p>From a Vision to a Stronger Tomorrow</p>
+          </div>
+
+          <div class="journey-wrap">
+            <div class="journey-visual" aria-hidden="true">
+              <div class="journey-mountain"></div>
+            </div>
+            <svg class="journey-track" viewBox="0 0 1000 380" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M110 136 C180 132 230 171 281 178 S400 208 451 208 S575 235 631 235 S820 261 930 261" />
+              <g><circle cx="110" cy="136" r="4" /><circle cx="281" cy="178" r="4" /><circle cx="451" cy="208" r="4" /><circle cx="631" cy="235" r="4" /><circle cx="930" cy="261" r="4" /></g>
+            </svg>
+            <div class="journey-node node-2010">
+              <div class="journey-logo"><img src="assets/journey_2010_cutout.png" alt="" /></div>
+              <div class="journey-caption"><span class="year">2010</span><small>The Beginning</small></div>
+            </div>
+            <div class="journey-node node-2015">
+              <div class="journey-logo"><img src="assets/journey_2015_cutout.png" alt="" /></div>
+              <div class="journey-caption"><span class="year">2015</span><small>Growth</small></div>
+            </div>
+            <div class="journey-node node-2018">
+              <div class="journey-logo"><img src="assets/journey_2018_cutout.png" alt="" /></div>
+              <div class="journey-caption"><span class="year">2018</span><small>Technology</small></div>
+            </div>
+            <div class="journey-node node-2021">
+              <div class="journey-logo"><img src="assets/journey_2021_cutout.png" alt="" /></div>
+              <div class="journey-caption"><span class="year">2021</span><small>Our Brands</small></div>
+            </div>
+            <div class="journey-node node-2026">
+              <div class="journey-logo"><img src="assets/journey_2026_cutout.png" alt="" /></div>
+              <div class="journey-caption"><span class="year">2026</span><small>The Future</small></div>
+            </div>
+          </div>
+          <div class="page-list journey-details">
+            <div class="mini-feature"><h4>Brand Evolution</h4><p>Our identity is shaped by innovation, trust, and practical impact.</p></div>
+            <div class="mini-feature"><h4>Delivery Excellence</h4><p>Thoughtful execution keeps the customer at the center.</p></div>
+            <div class="mini-feature"><h4>Digital Momentum</h4><p>We evolve products and services to meet new opportunities.</p></div>
+            <div class="mini-feature"><h4>Future Outlook</h4><p>Our roadmap focuses on premium experiences and lasting value.</p></div>
+          </div>
+        </section>
+
+        <section class="about-story" id="about-us">
+          <div class="story-copy">
+            <h2>More Than Just Technology</h2>
+            <p>We Build Digital Experiences That Matter</p>
+
+            <div class="story-text">
+              Eliteinova Tech Pvt Ltd is a technology-driven company focused on building innovative digital solutions, creating platforms that connect people, opportunities and premium products.
+            </div>
+
+            <ul class="story-list">
+              <li>Web &amp; Mobile Applications</li>
+              <li>E-Commerce Solutions</li>
+              <li>Brand &amp; Digital Experience</li>
+              <li>Maintenance &amp; Support</li>
+            </ul>
+
+            <a class="primary-btn" href="#about-details">About Our Company</a>
+          </div>
+
+          <div class="story-visual">
+            <div class="team-photo"></div>
+            <div class="stat-badge">
+              <strong>15+</strong>
+              <span>Years of Experience</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="about-details" id="about-details">
+          <div class="section-title-wrap left-title">
+            <h2>About Eliteinova</h2>
+            <p>We blend technology, trust, and long-term value.</p>
+          </div>
+          <div class="content-grid">
+            <article class="info-card"><h3>Our Vision</h3><p>Build purposeful digital ecosystems that connect people, communities, and businesses through elegant online experiences.</p></article>
+            <article class="info-card"><h3>Our Mission</h3><p>Develop scalable technology platforms that simplify discovery, improve engagement, and create measurable value.</p></article>
+            <article class="info-card"><h3>Our Values</h3><ul><li>Trust and transparency</li><li>Design-led innovation</li><li>Customer-first execution</li></ul></article>
+          </div>
+          <div class="page-list">
+            <div class="mini-feature"><h4>Technology Focus</h4><p>Web, mobile, e-commerce, cloud, and product development.</p></div>
+            <div class="mini-feature"><h4>Business Focus</h4><p>Digital strategy, product design, and modern customer journeys.</p></div>
+            <div class="mini-feature"><h4>Customer Focus</h4><p>We listen, design clearly, and deliver premium experiences.</p></div>
+            <div class="mini-feature"><h4>Long-Term Growth</h4><p>Every product gets a strong base and a sustainable path to scale.</p></div>
+          </div>
+        </section>
+
+        <section class="why-section">
+          <div class="section-title-wrap left-title">
+            <h2>Why Choose Eliteinova?</h2>
+            <p>Your Success is Our Priority.</p>
+          </div>
+
+          <div class="metrics-row">
+            <div class="metric-box">
+              <div class="metric-icon">◔</div>
+              <div class="metric-number">15+</div>
+              <div class="metric-label">Years of Experience</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-icon">◎</div>
+              <div class="metric-number">500+</div>
+              <div class="metric-label">Happy Clients</div>
+            </div>
+            <div class="metric-box">
+              <div class="metric-icon">◍</div>
+              <div class="metric-number">100%</div>
+              <div class="metric-label">Quality Commitment</div>
+            </div>
+          </div>
+
+          <div class="why-grid">
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_website.png" alt="" /></div>
+              <h3>Website Development</h3>
+              <p>Custom-built digital experiences</p>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_mobile.png" alt="" /></div>
+              <h3>Mobile Apps</h3>
+              <p>Connected iOS and Android experiences</p>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_ecom.png" alt="" /></div>
+              <h3>E-Commerce</h3>
+              <p>Digital storefronts made to convert</p>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_webapp.png" alt="" /></div>
+              <h3>Web Applications</h3>
+              <p>Scalable tools built around your workflow</p>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_seo.png" alt="" /></div>
+              <h3>SEO Services</h3>
+              <p>Search visibility that supports growth</p>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_uiux.png" alt="" /></div>
+              <h3>UI/UX Design</h3>
+              <p>Clear, customer-focused journeys</p>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_consulting.png" alt="" /></div>
+              <h3>Technology Consulting</h3>
+              <p>Expert guidance from idea to launch</p>
+            </div>
+            <div class="why-item">
+              <div class="why-item-icon"><img src="assets/digital_maintenance.png" alt="" /></div>
+              <h3>Ongoing Support</h3>
+              <p>Long-term maintenance and care</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="ecosystem-section">
+          <div class="section-title-wrap left-title">
+            <h2>Our Ecosystem</h2>
+            <p>Technology Behind Relationships, Property &amp; Lifestyle</p>
+          </div>
+
+          <div class="ecosystem-stage">
+            <div class="eco-node eco-matrimony">
+              <img src="assets/ecosystem_matrimony.png" alt="" />
+              <span>Matrimony</span>
+            </div>
+            <div class="eco-node eco-tech">
+              <img src="assets/ecosystem_tech.png" alt="" />
+              <span>Tech</span>
+            </div>
+            <div class="eco-node eco-property">
+              <img src="assets/ecosystem_properties.png" alt="" />
+              <span>Properties</span>
+            </div>
+            <div class="eco-node eco-leather">
+              <img src="assets/ecosystem_leather.png" alt="" />
+              <span>Leather</span>
+            </div>
+            <div class="eco-center">
+              <img src="assets/88627263.png" alt="Eliteinova" />
+            </div>
+          </div>
+        </section>
+
+        <section class="cta-band panel" id="contact">
+          <div class="cta-copy">
+            <h2>Let’s Build Something Extraordinary Together</h2>
+            <p>From idea to execution, we turn your vision into powerful digital experiences. Partner with Eliteinova Tech and bring your idea to life.</p>
+            <a href="#contact" class="primary-btn">Book a Free Consultation</a>
+          </div>
+          <div class="cta-visual">
+            <div class="cta-orb">
+              <div class="orb-inner">
+                <img src="assets/88627263.png" alt="Eliteinova Tech Pvt Ltd" />
+              </div>
+            </div>
+            <div class="orb-label">Eliteinova<br />Tech Pvt Ltd</div>
+          </div>
+        </section>
+
+        <section class="contact-details" id="contact-details" aria-label="Contact details">
+          <div class="page-list">
+            <div class="mini-feature"><h4>Call</h4><p><a href="tel:+917397260093">+91 73972 60093</a></p></div>
+            <div class="mini-feature"><h4>Email</h4><p><a href="mailto:info@eliteinovatechpvtltd.com">info@eliteinovatechpvtltd.com</a></p></div>
+            <div class="mini-feature"><h4>Location</h4><p>Chennai, Tamil Nadu, India</p></div>
+            <div class="mini-feature"><h4>Business Hours</h4><p>Mon – Sat | 10:00 AM – 6:00 PM</p></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-brand">
+          <div class="brand-mark small-mark"><img src="assets/88627263.png" alt="" /></div>
+          <div class="footer-logo-text">
+            <h3>Eliteinova</h3>
+            <p>Tech Pvt Ltd</p>
+          </div>
+          <div class="footer-tagline">Technology • Lifestyle • Relationships • Property</div>
+          <div class="socials">
+            <span>f</span>
+            <span>in</span>
+            <span>◎</span>
+            <span>x</span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Our Brands</h4>
+          <ul>
+            <li>Eliteinova Matrimony</li>
+            <li>Eliteinova Properties</li>
+            <li>Eliteinova Leather Products</li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li>Website Development</li>
+            <li>Mobile App</li>
+            <li>E-Commerce</li>
+            <li>Web Applications</li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Portfolio</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+
+        <div class="footer-links apply-box">
+          <h4>Get In Touch</h4>
+          <p>+91 72370 00092</p>
+          <p>info@eliteinovatech.com</p>
+          <p>Chennai, Tamil Nadu</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="theme.js"></script>
+    <script type="module" src="3d-scene.js"></script>
+  </body>
+</html>

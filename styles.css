@@ -16,7 +16,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; overflow-x: clip; }
+html { scroll-behavior: smooth; overflow-x: clip; zoom: 0.75;}
 body {
   margin: 0;
   font-family: "Manrope", sans-serif;
